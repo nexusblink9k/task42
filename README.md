@@ -24,8 +24,10 @@ eval $(minikube docker-env)
 ```
 
 ## Build the flask app via docker
+We need a build argument to pass the short git commit hash.
 ```
-docker build -t flask-app app/.
+docker build --build-arg SHORT_HASH=$(git rev-parse --short HEAD) -t flask-app app/.
+
 ```
 
 ## Deploy configs and services
@@ -52,7 +54,7 @@ minikube service app-service
 ```
 
 ## Check grafana in browser
-Login with ***admin:deadbeef (I know plain text password in a README.md file is not so clever, but it is in the config file too)
+Login with *admin:deadbeef* (I know plain text password in a README.md file is not so clever, but it is in the config file too)
 
 ```
  minikube service grafana-service 
