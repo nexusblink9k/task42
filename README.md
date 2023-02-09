@@ -4,12 +4,19 @@ This is my solution for the interview task.
 
 Please note that I don't put any company name or actual details into this file on purpose as I'd like to give a chance to other candidates to go through on all subtasks and not use my configs etc. That would kill the fun, right?
 
-This steps below are *not* written ina spoon-feeding style and contains only the high level steps of reproducing my work in (hopefully) any environment. But just for the record I used Arch Linux. I tried to keep the deployment as simple as I could but I'm sure there a lot of room for improvement.
+This steps below are *not* written in a spoon-feeding style and contains only the high level steps of reproducing my work in (hopefully) any environment.
 
+Just for the record I used Arch Linux.
+
+I tried to keep the deployment as simple as I could but I'm sure there a lot of room for improvement.
 
 Anyway, before starting make sure **docker** and **minikube** are installed, configured and started properly.
 
 ## Clone this repo
+```
+git clone https://github.com/nexusblink9k/task42
+
+```
 
 ## Set docker to point to minikube 
 ```
