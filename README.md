@@ -69,11 +69,11 @@ With 15 replicas by default
 minikube kubectl -- apply -f deploy/nginx-deploy.yml
 ```
 
-## wait, check if the alert is triggered by prometheus alertmanager
+## Wait, check if the alert is triggered by prometheus alertmanager
 ![prometheus](/screenshots/prometheus_alert.png)
 ![alertmanager](/screenshots/alertmanager_alert.png)
 
-## check the flash app logs
+## Check the flash app logs
 You might want to know if /alert is hit by the alertmanager, also check counter increased on the flask app, etc...
 
 ## Scale down nginx
