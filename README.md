@@ -47,7 +47,7 @@ minikube kubectl -- get pod
 minikube service list
 ```
 
-## Test flash app in browser
+## Test flask app in browser
 Get the url by running
 ```
 minikube service app-service 
@@ -75,7 +75,7 @@ minikube kubectl -- apply -f deploy/nginx-deploy.yml
 ![prometheus](/screenshots/prometheus_alert.png)
 ![alertmanager](/screenshots/alertmanager_alert.png)
 
-## Check the flash app logs
+## Check the flask app logs
 You might want to know if /alert is hit by the alertmanager, also check counter increased on the flask app, etc...
 
 ## Scale down nginx
