@@ -12,6 +12,7 @@ I tried to keep the deployment as simple as I could but I'm sure there a lot of 
 
 Anyway, before starting make sure **docker** and **minikube** are installed, configured and started properly.
 
+
 ## Clone this repo
 ```
 git clone https://github.com/nexusblink9k/task42
@@ -60,8 +61,9 @@ Login with *admin:deadbeef* (I know plain text password in a README.md file is n
  minikube service grafana-service 
 ```
 
-## Create new datasource as requested
-Visualise it on a chart eg. *sum(kube_pod_container_status_running{namespace!="kube-system"})*
+## Create dashboard
+
+Visualise non-system pods on a chart eg. *sum(kube_pod_container_status_running{namespace!="kube-system"})*
 
 ![grafana](/screenshots/grafana.png)
 
@@ -71,7 +73,7 @@ With 15 replicas by default
 minikube kubectl -- apply -f deploy/nginx-deploy.yml
 ```
 
-## Wait, check if the alert is triggered by prometheus alertmanager
+## Wait, check if the alert is triggered by prometheus / alertmanager
 ![prometheus](/screenshots/prometheus_alert.png)
 ![alertmanager](/screenshots/alertmanager_alert.png)
 
